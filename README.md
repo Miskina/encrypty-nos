@@ -14,13 +14,35 @@ Both of the libraries were installed using the MSYS2 platform, along with the Mi
 as the compiler.
 
 The application itself can be compiled with the following compiler flags (for debug mode):
-    -g -O0 -Wall -std=c++17 -D_FILE_OFFSET_BITS=64 -D__WXMSW__ -fpermissive
+- -g
+- -O0
+- -Wall
+- -std=c++17 
+- -D_FILE_OFFSET_BITS=64
+- -D__WXMSW__
+- -fpermissive
+
 And linker flags:
-    -LC:/msys64/mingw64/lib -pipe -Wl,--subsystem,windows -mwindows 
-    -lwx_mswu_xrc-3.0 -lwx_mswu_webview-3.0 -lwx_mswu_stc-3.0 -lwx_mswu_richtext-3.0 
-    -lwx_mswu_ribbon-3.0 -lwx_mswu_propgrid-3.0 -lwx_mswu_aui-3.0 -lwx_mswu_gl-3.0 
-    -lwx_mswu_html-3.0 -lwx_mswu_qa-3.0 -lwx_mswu_adv-3.0 -lwx_mswu_core-3.0 -lwx_baseu_xml-3.0 
-    -lwx_baseu_net-3.0 -lwx_baseu-3.0
+- -LC:/msys64/mingw64/lib 
+- -pipe 
+- -Wl,
+- --subsystem,windows 
+- -mwindows 
+- -lwx_mswu_xrc-3.0 
+- -lwx_mswu_webview-3.0 
+- -lwx_mswu_stc-3.0
+- -lwx_mswu_richtext-3.0 
+- -lwx_mswu_ribbon-3.0 
+- -lwx_mswu_propgrid-3.0 
+- -lwx_mswu_aui-3.0 
+- -lwx_mswu_gl-3.0 
+- -lwx_mswu_html-3.0 
+- -lwx_mswu_qa-3.0 
+- -lwx_mswu_adv-3.0 
+- -lwx_mswu_core-3.0 
+- -lwx_baseu_xml-3.0 
+- -lwx_baseu_net-3.0 
+- -lwx_baseu-3.0
 
 ## .nos Files
 In this *readme* file and in the application itself, .nos files are mentioned which are files used for the
